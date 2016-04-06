@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F45F0C951CB534800096A1FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F0C941CB534800096A1FE /* main.m */; };
+		F45F0C981CB534800096A1FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F0C971CB534800096A1FE /* AppDelegate.m */; };
+		F45F0C9B1CB534800096A1FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F0C9A1CB534800096A1FE /* ViewController.m */; };
+		F45F0C9E1CB534800096A1FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45F0C9C1CB534800096A1FE /* Main.storyboard */; };
+		F45F0CA01CB534800096A1FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45F0C9F1CB534800096A1FE /* Assets.xcassets */; };
+		F45F0CA31CB534800096A1FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45F0CA11CB534800096A1FE /* LaunchScreen.storyboard */; };
+		F45F0CB11CB53ADD0096A1FE /* AppelSecoursController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F0CB01CB53ADD0096A1FE /* AppelSecoursController.m */; };
+		F45F0CB61CB548A10096A1FE /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45F0CB51CB548A10096A1FE /* SpeechKit.framework */; };
+		F45F0CB91CB5558B0096A1FE /* SKSConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = F45F0CB81CB5558B0096A1FE /* SKSConfiguration.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F45F0C901CB534800096A1FE /* CasqueConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CasqueConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45F0C941CB534800096A1FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F45F0C961CB534800096A1FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F45F0C971CB534800096A1FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F45F0C991CB534800096A1FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F45F0C9A1CB534800096A1FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F45F0C9D1CB534800096A1FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F45F0C9F1CB534800096A1FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F45F0CA21CB534800096A1FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F45F0CA41CB534800096A1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45F0CAA1CB538560096A1FE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F45F0CAF1CB53ADD0096A1FE /* AppelSecoursController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppelSecoursController.h; sourceTree = "<group>"; };
+		F45F0CB01CB53ADD0096A1FE /* AppelSecoursController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppelSecoursController.m; sourceTree = "<group>"; };
+		F45F0CB21CB5463A0096A1FE /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechKit.framework; path = "../../../../Downloads/speechkit-iOS-2/SpeechKit.framework"; sourceTree = "<group>"; };
+		F45F0CB51CB548A10096A1FE /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechKit.framework; sourceTree = "<group>"; };
+		F45F0CB71CB5558B0096A1FE /* SKSConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSConfiguration.h; sourceTree = "<group>"; };
+		F45F0CB81CB5558B0096A1FE /* SKSConfiguration.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKSConfiguration.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F45F0C8D1CB534800096A1FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45F0CB61CB548A10096A1FE /* SpeechKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F45F0C871CB534800096A1FE = {
+			isa = PBXGroup;
+			children = (
+				F45F0CB21CB5463A0096A1FE /* SpeechKit.framework */,
+				F45F0CAA1CB538560096A1FE /* AVFoundation.framework */,
+				F45F0C921CB534800096A1FE /* CasqueConnect */,
+				F45F0C911CB534800096A1FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F45F0C911CB534800096A1FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F45F0C901CB534800096A1FE /* CasqueConnect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F45F0C921CB534800096A1FE /* CasqueConnect */ = {
+			isa = PBXGroup;
+			children = (
+				F45F0CB41CB548770096A1FE /* Frameworks */,
+				F45F0C961CB534800096A1FE /* AppDelegate.h */,
+				F45F0C971CB534800096A1FE /* AppDelegate.m */,
+				F45F0CB71CB5558B0096A1FE /* SKSConfiguration.h */,
+				F45F0CB81CB5558B0096A1FE /* SKSConfiguration.mm */,
+				F45F0C991CB534800096A1FE /* ViewController.h */,
+				F45F0C9A1CB534800096A1FE /* ViewController.m */,
+				F45F0C9C1CB534800096A1FE /* Main.storyboard */,
+				F45F0C9F1CB534800096A1FE /* Assets.xcassets */,
+				F45F0CA11CB534800096A1FE /* LaunchScreen.storyboard */,
+				F45F0CA41CB534800096A1FE /* Info.plist */,
+				F45F0C931CB534800096A1FE /* Supporting Files */,
+				F45F0CAF1CB53ADD0096A1FE /* AppelSecoursController.h */,
+				F45F0CB01CB53ADD0096A1FE /* AppelSecoursController.m */,
+			);
+			path = CasqueConnect;
+			sourceTree = "<group>";
+		};
+		F45F0C931CB534800096A1FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F45F0C941CB534800096A1FE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F45F0CB41CB548770096A1FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F45F0CB51CB548A10096A1FE /* SpeechKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F45F0C8F1CB534800096A1FE /* CasqueConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45F0CA71CB534800096A1FE /* Build configuration list for PBXNativeTarget "CasqueConnect" */;
+			buildPhases = (
+				F45F0C8C1CB534800096A1FE /* Sources */,
+				F45F0C8D1CB534800096A1FE /* Frameworks */,
+				F45F0C8E1CB534800096A1FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CasqueConnect;
+			productName = CasqueConnect;
+			productReference = F45F0C901CB534800096A1FE /* CasqueConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F45F0C881CB534800096A1FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Simon;
+				TargetAttributes = {
+					F45F0C8F1CB534800096A1FE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = W62RCNEHXU;
+					};
+				};
+			};
+			buildConfigurationList = F45F0C8B1CB534800096A1FE /* Build configuration list for PBXProject "CasqueConnect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F45F0C871CB534800096A1FE;
+			productRefGroup = F45F0C911CB534800096A1FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F45F0C8F1CB534800096A1FE /* CasqueConnect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F45F0C8E1CB534800096A1FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45F0CA31CB534800096A1FE /* LaunchScreen.storyboard in Resources */,
+				F45F0CA01CB534800096A1FE /* Assets.xcassets in Resources */,
+				F45F0C9E1CB534800096A1FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F45F0C8C1CB534800096A1FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45F0C9B1CB534800096A1FE /* ViewController.m in Sources */,
+				F45F0CB91CB5558B0096A1FE /* SKSConfiguration.mm in Sources */,
+				F45F0CB11CB53ADD0096A1FE /* AppelSecoursController.m in Sources */,
+				F45F0C981CB534800096A1FE /* AppDelegate.m in Sources */,
+				F45F0C951CB534800096A1FE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F45F0C9C1CB534800096A1FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45F0C9D1CB534800096A1FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F45F0CA11CB534800096A1FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45F0CA21CB534800096A1FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F45F0CA51CB534800096A1FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F45F0CA61CB534800096A1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F45F0CA81CB534800096A1FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CasqueConnect",
+				);
+				INFOPLIST_FILE = CasqueConnect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-l\"c++\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axa.casqueConnecte.CasqueConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		F45F0CA91CB534800096A1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CasqueConnect",
+				);
+				INFOPLIST_FILE = CasqueConnect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-l\"c++\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axa.casqueConnecte.CasqueConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F45F0C8B1CB534800096A1FE /* Build configuration list for PBXProject "CasqueConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45F0CA51CB534800096A1FE /* Debug */,
+				F45F0CA61CB534800096A1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45F0CA71CB534800096A1FE /* Build configuration list for PBXNativeTarget "CasqueConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45F0CA81CB534800096A1FE /* Debug */,
+				F45F0CA91CB534800096A1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F45F0C881CB534800096A1FE /* Project object */;
+}
