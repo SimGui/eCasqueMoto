@@ -17,6 +17,7 @@
 @property (strong, nonatomic) SKSession *skSession;
 @property (nonatomic) int nbTentative;
 @property (strong, nonatomic) NSString *urlToCall;
+@property (nonatomic) BOOL callInProgress;
 
 - (void)demanderPourAppelerLesSecours;
 

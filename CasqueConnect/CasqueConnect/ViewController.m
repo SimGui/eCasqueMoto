@@ -20,9 +20,11 @@
 
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
-    if(event.type == UIEventSubtypeMotionShake)
+    if(event.type == UIEventSubtypeMotionShake && !self.appelController.callInProgress)
     {
         self.appelController = [[AppelSecoursController alloc] init];
+        self.appelController.callInProgress = YES;
+        
         [self.appelController demanderPourAppelerLesSecours];
     }
 }

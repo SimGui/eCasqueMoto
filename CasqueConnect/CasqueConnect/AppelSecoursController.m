@@ -42,6 +42,7 @@
     AVSpeechSynthesizer *syn = [[AVSpeechSynthesizer alloc] init];
     
     [syn speakUtterance:utterance];
+    self.callInProgress = NO;
 }
 
 - (void)annulerAppelSecours
@@ -50,6 +51,7 @@
     AVSpeechSynthesizer *syn = [[AVSpeechSynthesizer alloc] init];
     
     [syn speakUtterance:utterance];
+    self.callInProgress = NO;
 }
 
 - (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
@@ -106,6 +108,7 @@
     
     [self confirmerAppelSecours];
     self.nbTentative = 0;
+    self.callInProgress = NO;
 }
 
 @end
