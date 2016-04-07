@@ -50,7 +50,6 @@
     AVSpeechSynthesizer *syn = [[AVSpeechSynthesizer alloc] init];
     
     [syn speakUtterance:utterance];
-    self.viewController.callInProgress = NO;
 }
 
 - (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
@@ -107,7 +106,6 @@
     
     [self confirmerAppelSecours];
     self.nbTentative = 0;
-    self.viewController.callInProgress = NO;
 }
 
 @end

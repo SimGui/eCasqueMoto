@@ -12,7 +12,6 @@
 @interface ViewController : UIViewController
 
 @property (nonatomic, strong) AppelSecoursController *appelController;
-@property (nonatomic) BOOL callInProgress;
 
 @end
 

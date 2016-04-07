@@ -13,15 +13,6 @@
 
 @implementation ViewController
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _callInProgress = NO;
-    }
-    return self;
-}
-
 - (BOOL)canBecomeFirstResponder
 {
     return YES;
@@ -29,12 +20,9 @@
 
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
-    if(event.type == UIEventSubtypeMotionShake && !self.callInProgress)
+    if(event.type == UIEventSubtypeMotionShake)
     {
-        self.callInProgress = YES;
         self.appelController = [[AppelSecoursController alloc] init];
-        self.appelController.viewController = self;
-        
         [self.appelController demanderPourAppelerLesSecours];
     }
 }
