@@ -44,6 +44,15 @@
     [syn speakUtterance:utterance];
 }
 
+- (void)annulerAppelSecours
+{
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:@"Les secours n'ont pas été prévenu!"];
+    AVSpeechSynthesizer *syn = [[AVSpeechSynthesizer alloc] init];
+    
+    [syn speakUtterance:utterance];
+    self.viewController.callInProgress = NO;
+}
+
 - (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
 {
     [self p_startTransaction];
@@ -61,9 +70,13 @@
     {
         [self demanderPourAppelerLesSecours];
     }
-    else
+    else if(self.nbTentative >= 2)
     {
         [self p_envoyerInformationClient];
+    }
+    else
+    {
+        [self annulerAppelSecours];
     }
 }
 
@@ -94,6 +107,7 @@
     
     [self confirmerAppelSecours];
     self.nbTentative = 0;
+    self.viewController.callInProgress = NO;
 }
 
 @end
