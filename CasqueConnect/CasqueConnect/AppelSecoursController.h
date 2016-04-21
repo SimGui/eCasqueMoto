@@ -20,5 +20,8 @@
 @property (nonatomic) BOOL callInProgress;
 
 - (void)demanderPourAppelerLesSecours;
+- (void)reponseOui;
+- (void)reponseNon;
+
 
 @end

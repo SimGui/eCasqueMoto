@@ -12,7 +12,6 @@
 		F45F0C9B1CB534800096A1FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F0C9A1CB534800096A1FE /* ViewController.m */; };
 		F45F0C9E1CB534800096A1FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45F0C9C1CB534800096A1FE /* Main.storyboard */; };
 		F45F0CA01CB534800096A1FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45F0C9F1CB534800096A1FE /* Assets.xcassets */; };
-		F45F0CA31CB534800096A1FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45F0CA11CB534800096A1FE /* LaunchScreen.storyboard */; };
 		F45F0CB11CB53ADD0096A1FE /* AppelSecoursController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F0CB01CB53ADD0096A1FE /* AppelSecoursController.m */; };
 		F45F0CB61CB548A10096A1FE /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45F0CB51CB548A10096A1FE /* SpeechKit.framework */; };
 		F45F0CB91CB5558B0096A1FE /* SKSConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = F45F0CB81CB5558B0096A1FE /* SKSConfiguration.mm */; };
@@ -27,7 +26,6 @@
 		F45F0C9A1CB534800096A1FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F45F0C9D1CB534800096A1FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F45F0C9F1CB534800096A1FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F45F0CA21CB534800096A1FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F45F0CA41CB534800096A1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F45F0CAA1CB538560096A1FE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F45F0CAF1CB53ADD0096A1FE /* AppelSecoursController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppelSecoursController.h; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				F45F0C9A1CB534800096A1FE /* ViewController.m */,
 				F45F0C9C1CB534800096A1FE /* Main.storyboard */,
 				F45F0C9F1CB534800096A1FE /* Assets.xcassets */,
-				F45F0CA11CB534800096A1FE /* LaunchScreen.storyboard */,
 				F45F0CA41CB534800096A1FE /* Info.plist */,
 				F45F0C931CB534800096A1FE /* Supporting Files */,
 				F45F0CAF1CB53ADD0096A1FE /* AppelSecoursController.h */,
@@ -163,7 +160,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F45F0CA31CB534800096A1FE /* LaunchScreen.storyboard in Resources */,
 				F45F0CA01CB534800096A1FE /* Assets.xcassets in Resources */,
 				F45F0C9E1CB534800096A1FE /* Main.storyboard in Resources */,
 			);
@@ -193,14 +189,6 @@
 				F45F0C9D1CB534800096A1FE /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F45F0CA11CB534800096A1FE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F45F0CA21CB534800096A1FE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -311,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (

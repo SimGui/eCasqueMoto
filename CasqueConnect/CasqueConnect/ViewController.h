@@ -12,6 +12,13 @@
 @interface ViewController : UIViewController
 
 @property (nonatomic, strong) AppelSecoursController *appelController;
+@property (weak, nonatomic) IBOutlet UIButton *profileBtn;
+@property (weak, nonatomic) IBOutlet UIButton *contactBtn;
+@property (weak, nonatomic) IBOutlet UIButton *contratBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *playBtn;
+@property (weak, nonatomic) IBOutlet UIButton *stopButton;
+@property (weak, nonatomic) IBOutlet UILabel *instructionLbl;
 
 @end
 

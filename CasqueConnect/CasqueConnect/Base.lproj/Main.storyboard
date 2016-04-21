@@ -1,27 +1,232 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Kgi-CE-EZd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Pli'Mot-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="vLh-Dx-Z43"/>
+                        <viewControllerLayoutGuide type="bottom" id="BUo-PM-2MB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03_Create_Profile_02" translatesAutoresizingMaskIntoConstraints="NO" id="yrj-g8-bVg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kj0-VP-Yte">
+                                <rect key="frame" x="0.0" y="0.0" width="380" height="800"/>
+                                <color key="backgroundColor" red="0.2326233183856502" green="0.22660019638281076" blue="0.22808384795136355" alpha="0.44813493497109824" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BSD-E0-bQA" userLabel="Informations">
+                                <rect key="frame" x="0.0" y="314" width="375" height="147"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mes informations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmz-8v-Xo4">
+                                        <rect key="frame" x="20" y="20" width="143" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhG-1e-9ax">
+                                        <rect key="frame" x="20" y="68" width="56" height="59"/>
+                                        <state key="normal" backgroundImage="new-file"/>
+                                        <connections>
+                                            <segue destination="9Bw-5K-eGd" kind="push" id="UVM-Iy-ZmK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCS-vj-I3w">
+                                        <rect key="frame" x="159" y="68" width="56" height="59"/>
+                                        <state key="normal" backgroundImage="user"/>
+                                        <connections>
+                                            <segue destination="2CV-T0-0MF" kind="push" id="mdA-1S-dE0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ori-Ev-lXi">
+                                        <rect key="frame" x="295" y="68" width="56" height="59"/>
+                                        <state key="normal" backgroundImage="note"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kK9-83-R0H" userLabel="Parcours">
+                                <rect key="frame" x="0.0" y="469" width="375" height="147"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mes parcours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogM-8y-UrK">
+                                        <rect key="frame" x="20" y="20" width="143" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsA-cn-GLg">
+                                        <rect key="frame" x="20" y="68" width="56" height="59"/>
+                                        <state key="normal" backgroundImage="add-button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woC-3Q-T4D">
+                                        <rect key="frame" x="159" y="68" width="56" height="59"/>
+                                        <state key="normal" backgroundImage="folders"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edD-hf-Thb" userLabel="Informations">
+                                <rect key="frame" x="0.0" y="64" width="375" height="242"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oG9-nU-261">
+                                        <rect key="frame" x="142" y="76" width="90" height="90"/>
+                                        <state key="normal" backgroundImage="play-button"/>
+                                        <connections>
+                                            <action selector="clickOnPlayBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="84o-IN-IWY"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYt-LT-UiJ">
+                                        <rect key="frame" x="142" y="76" width="90" height="90"/>
+                                        <state key="normal" backgroundImage="close"/>
+                                        <connections>
+                                            <action selector="clickOnStopBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ssJ-27-U8T"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gH-Tl-DUD">
+                                        <rect key="frame" x="8" y="192" width="359" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="GVT-Ec-RnP">
+                                        <rect key="frame" x="8" y="240" width="359" height="1"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s04-cn-Zso">
+                                        <rect key="frame" x="0.0" y="0.0" width="134" height="247"/>
+                                        <connections>
+                                            <action selector="clickBtnOui:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hgb-Sy-Nl9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzU-iC-3CA">
+                                        <rect key="frame" x="240" y="0.0" width="135" height="241"/>
+                                        <connections>
+                                            <action selector="clickBtnNon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zTz-7G-sJd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Pli'Mot" id="P3W-qE-grz"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="contactBtn" destination="aCS-vj-I3w" id="e2K-EK-VCw"/>
+                        <outlet property="contratBtn" destination="ori-Ev-lXi" id="OFy-Dr-Ple"/>
+                        <outlet property="instructionLbl" destination="6gH-Tl-DUD" id="2D2-Wb-RgX"/>
+                        <outlet property="playBtn" destination="oG9-nU-261" id="kS9-V3-oMe"/>
+                        <outlet property="profileBtn" destination="uhG-1e-9ax" id="UY2-iC-o8m"/>
+                        <outlet property="stopButton" destination="NYt-LT-UiJ" id="oW6-Nd-TeK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237" y="406"/>
+            <point key="canvasLocation" x="149.5" y="868.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eqP-OQ-sdq">
+            <objects>
+                <navigationController id="Kgi-CE-EZd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lQa-JT-e37">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Nrj-iJ-EB0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wef-Zw-Xae" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="869"/>
+        </scene>
+        <!--Ma Fiche Santé-->
+        <scene sceneID="Jd1-za-pIh">
+            <objects>
+                <viewController id="9Bw-5K-eGd" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YMP-dk-mkv"/>
+                        <viewControllerLayoutGuide type="bottom" id="nhf-QL-coo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wq2-Se-8Uf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03_Create_Profile_02" translatesAutoresizingMaskIntoConstraints="NO" id="rBQ-Ad-Yx9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jl8-bw-OHd">
+                                <rect key="frame" x="-3" y="-1" width="380" height="800"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ecran fiche client" translatesAutoresizingMaskIntoConstraints="NO" id="LAB-hZ-eRZ">
+                                        <rect key="frame" x="0.0" y="-11" width="380" height="672"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2326233184" green="0.22660019640000001" blue="0.22808384800000001" alpha="0.44813493500000001" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ma Fiche Santé" id="WiE-lC-wK8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzZ-HJ-Cm9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903.5" y="294.5"/>
+        </scene>
+        <!--Mes Proches-->
+        <scene sceneID="8ok-Hi-W6g">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64Y-LI-JWt" sceneMemberID="firstResponder"/>
+                <viewController id="2CV-T0-0MF" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yya-3m-cmY"/>
+                        <viewControllerLayoutGuide type="bottom" id="daN-4e-k80"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yEq-S0-UI8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03_Create_Profile_02" translatesAutoresizingMaskIntoConstraints="NO" id="JBx-n8-gge">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IOt-Jw-IXs">
+                                <rect key="frame" x="-3" y="-1" width="380" height="800"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="Knt-6M-q4x">
+                                        <rect key="frame" x="0.0" y="-11" width="380" height="672"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2326233184" green="0.22660019640000001" blue="0.22808384800000001" alpha="0.44813493500000001" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mes Proches" id="bSg-fd-qC2"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="870.5" y="1260.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="03_Create_Profile_02" width="1200" height="799"/>
+        <image name="Ecran fiche client" width="633" height="1124"/>
+        <image name="add-button" width="512" height="512"/>
+        <image name="close" width="512" height="512"/>
+        <image name="folders" width="512" height="512"/>
+        <image name="image" width="612" height="1086"/>
+        <image name="line" width="601" height="1"/>
+        <image name="new-file" width="512" height="512"/>
+        <image name="note" width="512" height="512"/>
+        <image name="play-button" width="512" height="512"/>
+        <image name="user" width="512" height="512"/>
+    </resources>
 </document>

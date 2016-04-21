@@ -31,7 +31,6 @@
 {
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:@"Souhaitez-vous que les secours interviennent ?"];
     AVSpeechSynthesizer *syn = [[AVSpeechSynthesizer alloc] init];
-    syn.delegate = self;
     
     [syn speakUtterance:utterance];
 }
@@ -86,6 +85,15 @@
     [self demanderPourAppelerLesSecours];
 }
 
+- (void)reponseOui
+{
+    [self p_envoyerInformationClient];
+}
+
+- (void)reponseNon
+{
+    [self annulerAppelSecours];
+}
 #pragma mark - Private Methods
 
 - (void) p_startTransaction

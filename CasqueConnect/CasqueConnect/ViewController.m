@@ -13,6 +13,16 @@
 
 @implementation ViewController
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self)
+    {
+        _profileBtn.tintColor = [UIColor whiteColor];
+    }
+    return self;
+}
+
 - (BOOL)canBecomeFirstResponder
 {
     return YES;
@@ -27,6 +37,31 @@
         
         [self.appelController demanderPourAppelerLesSecours];
     }
+}
+
+- (IBAction)clickBtnOui:(id)sender
+{
+    [self.appelController reponseOui];
+}
+
+- (IBAction)clickBtnNon:(id)sender
+{
+    [self.appelController reponseNon];
+}
+
+
+- (IBAction)clickOnPlayBtn:(id)sender
+{
+    self.playBtn.hidden = YES;
+    self.stopButton.hidden = NO;
+    self.instructionLbl.text = @"Détéction de chute activée";
+}
+
+- (IBAction)clickOnStopBtn:(id)sender
+{
+    self.playBtn.hidden = NO;
+    self.stopButton.hidden = YES;
+    self.instructionLbl.text = @"Détéction de chute desactivée";
 }
 
 @end
